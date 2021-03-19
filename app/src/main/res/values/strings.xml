@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PTSGENAP10RPL204</string>
+
+    //Script dari facebook
+    <string name="facebook_app_id">192953885598107</string>
+    <string name="fb_login_protocol_scheme">fb192953885598107</string>
+</resources>
