@@ -1,23 +1,32 @@
 package com.example.ptsgenap10rpl204;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.EditText;
+import android.provider.ContactsContract;
 import android.widget.TextView;
 
-public class DasboardActivity extends AppCompatActivity {
+import java.util.ArrayList;
 
+public class DasboardActivity extends AppCompatActivity {
+ 
     Bundle extra;
     String email;
     TextView profil;
+
+    private RecyclerView recyclerView;
+    private MahasiswaAdapter adapter;
+    private ArrayList<Mahasiswa> mahasiswaArrayList;
+    // we user ArrayList to populate data in RecyclerView
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dasboard);
 
-        profil = (TextView) findViewById(R.id.profil);
+        profil = findViewById(R.id.profil);
         extra = getIntent().getExtras();
         if (extra != null){
             email = extra.getString("Email");
@@ -25,5 +34,24 @@ public class DasboardActivity extends AppCompatActivity {
         }
 
 
+        recyclerView = (RecyclerView) findViewById(R.id.rvdata);
+
+        addData();
+
+        adapter = new MahasiswaAdapter(mahasiswaArrayList);
+        //selesai ngatur data dari adapter, kemudian di tempel ke Recyclerview nya
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(DasboardActivity.this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
+
+    }
+
+    void addData(){
+        mahasiswaArrayList = new ArrayList<>();
+        mahasiswaArrayList.add(new Mahasiswa("Dimas Maulana", "999", "081222","email"));
+        mahasiswaArrayList.add(new Mahasiswa("Budi", "000", "081222", "email"));
+        mahasiswaArrayList.add(new Mahasiswa("Ani", "222", "083333", "email budi"));
+        Mahasiswa Sari = new Mahasiswa("Sari", "xxx" , "000", "sari@gmail.com");
+        mahasiswaArrayList.add(Sari);
     }
 }

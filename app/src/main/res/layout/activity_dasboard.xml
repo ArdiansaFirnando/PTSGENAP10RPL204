@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="40dp"
         android:text="Selamat Datang di Pinterest"
         android:textStyle="bold"
         android:textColor="@color/black" />
@@ -26,5 +26,13 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginTop="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvdata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 
 </LinearLayout>

@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PTSGENAP10RPL204">
-        <activity android:name=".LoginSlide2Activity"></activity>
+        <activity android:name=".MahasiswaAdapter"></activity>
+        <activity android:name=".LoginSlide2Activity" />
         <activity android:name=".DasboardActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
