@@ -48,10 +48,9 @@ public class DasboardActivity extends AppCompatActivity {
 
     void addData(){
         mahasiswaArrayList = new ArrayList<>();
-        mahasiswaArrayList.add(new Mahasiswa("Dimas Maulana", "999", "081222","email"));
-        mahasiswaArrayList.add(new Mahasiswa("Budi", "000", "081222", "email"));
-        mahasiswaArrayList.add(new Mahasiswa("Ani", "222", "083333", "email budi"));
-        Mahasiswa Sari = new Mahasiswa("Sari", "xxx" , "000", "sari@gmail.com");
-        mahasiswaArrayList.add(Sari);
+        mahasiswaArrayList.add(new Mahasiswa("Dimas", "111", "081222","dimas@gmail.com"));
+        mahasiswaArrayList.add(new Mahasiswa("Budi", "000", "081222", "budi@gmail.com"));
+        mahasiswaArrayList.add(new Mahasiswa("Ani", "222", "083333", "ani@gmail.com"));
+        mahasiswaArrayList.add(new Mahasiswa("Lintang", "555", "08312889", "lintang@gmail.com"));
     }
 }

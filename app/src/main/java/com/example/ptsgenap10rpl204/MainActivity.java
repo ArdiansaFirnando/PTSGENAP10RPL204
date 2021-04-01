@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     && Password.equalsIgnoreCase("ardiansa")){
                     Toast.makeText(MainActivity.this, "Selamat anda berhasil login", Toast.LENGTH_SHORT).show();
 
-                    Intent move = new Intent(MainActivity.this, LoginSlide2Activity.class);
+                    Intent move = new Intent(MainActivity.this, DasboardActivity.class);
                     move.putExtra("Email", Email);
                     startActivity(move);
 
