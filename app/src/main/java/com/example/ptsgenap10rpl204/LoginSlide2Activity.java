@@ -49,8 +49,8 @@ public class LoginSlide2Activity extends AppCompatActivity {
                 String Email2 = txtEmailSlide2.getText().toString();
                 String Password2 = txtPasswordSlide2.getText().toString();
 
-                if (Email2.equalsIgnoreCase("andi")
-                    && Password2.equalsIgnoreCase("asd")){
+                if (Email2.equalsIgnoreCase("ardiansa312@gmail.com")
+                    && Password2.equalsIgnoreCase("ardiansa")){
 
                     Toast.makeText(LoginSlide2Activity.this, "selamat", Toast.LENGTH_SHORT).show();
 
