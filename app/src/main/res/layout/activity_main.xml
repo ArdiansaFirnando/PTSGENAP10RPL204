@@ -59,6 +59,7 @@
         android:textStyle="bold" />
 
     //Button "Lanjutkan" email
+
     <Button
         android:id="@+id/buttonContinue"
         android:layout_width="match_parent"
@@ -70,6 +71,8 @@
         android:backgroundTint="#E41117"
         android:text="Masuk"
         android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:cornerRadius="30dp" />
 
@@ -84,6 +87,7 @@
         android:layout_marginRight="62dp" />
 
     //Sign In button dari google
+
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
         android:layout_width="match_parent"

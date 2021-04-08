@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     && Password.equalsIgnoreCase("ardiansa")){
                     Toast.makeText(MainActivity.this, "Selamat anda berhasil login", Toast.LENGTH_SHORT).show();
 
-                    Intent move = new Intent(MainActivity.this, DasboardActivity.class);
+                    Intent move = new Intent(MainActivity.this, DashboardActivity.class);
                     move.putExtra("Email", Email);
                     startActivity(move);
 
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             public void onSuccess(LoginResult loginResult) {
                 Toast.makeText(MainActivity.this, "Selamat anda berhasil login", Toast.LENGTH_SHORT).show();
 
-                Intent move = new Intent(MainActivity.this, DasboardActivity.class);
+                Intent move = new Intent(MainActivity.this, DashboardActivity.class);
                 startActivity(move);
             }
 
@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
             // Signed in successfully, show authenticated UI.
             Toast.makeText(MainActivity.this, "Selamat anda berhasil login", Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(MainActivity.this, DasboardActivity.class);
+            Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
             startActivity(intent);
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
