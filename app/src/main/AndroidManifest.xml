@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PTSGENAP10RPL204">
-        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".DashboardActivity" />
         <activity android:name=".ModelAdapter" />
         <activity android:name=".MainActivity">
             <intent-filter>
